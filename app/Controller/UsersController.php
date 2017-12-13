@@ -100,7 +100,6 @@ class UsersController extends AppController {
 
 	public function delete($id = null){
 		if($this->User->delete($id)){
-			$this->Session->setFlash(__("Usuário deletado com sucesso!"), "default", array("class" => "success"));
 			$this->redirect("index");
 		}
 	}
